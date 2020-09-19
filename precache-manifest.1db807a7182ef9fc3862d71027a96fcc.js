@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2500d33c024665d6b4b34f0bf843ff70",
+    "revision": "be53ab3b2181613252b8da0b770e5e66",
     "url": "/NewYear-Timer/index.html"
   },
   {
-    "revision": "8b7c325000df71ee1df6",
+    "revision": "bc6945f88866d8dec1b3",
     "url": "/NewYear-Timer/static/css/main.6b64107e.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/NewYear-Timer/static/js/2.5b53ece3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8b7c325000df71ee1df6",
-    "url": "/NewYear-Timer/static/js/main.1e089815.chunk.js"
+    "revision": "bc6945f88866d8dec1b3",
+    "url": "/NewYear-Timer/static/js/main.1d013202.chunk.js"
   },
   {
     "revision": "07f5b5bba14d09f332fd",
