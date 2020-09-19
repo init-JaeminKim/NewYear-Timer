@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/NewYear-Timer/precache-manifest.4f7f4ce912c08d4331474f7bb6b409fc.js"
+  "/NewYear-Timer/precache-manifest.1db807a7182ef9fc3862d71027a96fcc.js"
 );
 
 self.addEventListener('message', (event) => {
