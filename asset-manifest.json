@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/NewYear-Timer/static/css/main.6b64107e.chunk.css",
+    "main.js": "/NewYear-Timer/static/js/main.e68c3cae.chunk.js",
+    "main.js.map": "/NewYear-Timer/static/js/main.e68c3cae.chunk.js.map",
+    "runtime-main.js": "/NewYear-Timer/static/js/runtime-main.5b40edb8.js",
+    "runtime-main.js.map": "/NewYear-Timer/static/js/runtime-main.5b40edb8.js.map",
+    "static/js/2.5b53ece3.chunk.js": "/NewYear-Timer/static/js/2.5b53ece3.chunk.js",
+    "static/js/2.5b53ece3.chunk.js.map": "/NewYear-Timer/static/js/2.5b53ece3.chunk.js.map",
+    "index.html": "/NewYear-Timer/index.html",
+    "precache-manifest.4f7f4ce912c08d4331474f7bb6b409fc.js": "/NewYear-Timer/precache-manifest.4f7f4ce912c08d4331474f7bb6b409fc.js",
+    "service-worker.js": "/NewYear-Timer/service-worker.js",
+    "static/css/main.6b64107e.chunk.css.map": "/NewYear-Timer/static/css/main.6b64107e.chunk.css.map",
+    "static/js/2.5b53ece3.chunk.js.LICENSE.txt": "/NewYear-Timer/static/js/2.5b53ece3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5b40edb8.js",
+    "static/js/2.5b53ece3.chunk.js",
+    "static/css/main.6b64107e.chunk.css",
+    "static/js/main.e68c3cae.chunk.js"
+  ]
+}
