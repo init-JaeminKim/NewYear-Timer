@@ -72,6 +72,7 @@ class Timer extends Component {
                     </h1>
                 }
                 <button className="button2" onClick={this.resetTimer}>./Warp</button>
+                <a href="https://github.com/init-JaeminKim/NewYear-Timer"><button>source code</button></a>
             </div>
         ]
     }
