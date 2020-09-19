@@ -1,13 +1,17 @@
 import React, { Component } from 'react'
 import Fire from "../components/Fire"
 
+let newYear = 1609480800000-Date.now();
 
 class Timer extends Component {
 
+   
+    
+
     state = {
-        hours: 1,
-        minutes: 0,
-        seconds: 5,
+        hours: parseInt(newYear/3600000),
+        minutes: parseInt((newYear/60000)%60),
+        seconds: parseInt((newYear/3600000)%24)
     }
 
     componentDidMount() {
@@ -59,15 +63,19 @@ class Timer extends Component {
     render() {
         const { hours, minutes, seconds } = this.state
 
-        return (
+        return [
+            <h2>New Year</h2>,
             <div>
                 { hours === 0 && minutes === 0 && seconds === 0
                     ? <Fire></Fire>
-                    : <h1>Remaining: {hours} : {minutes < 10 ? `0${minutes}` : minutes} : {seconds < 10 ? `0${seconds}` : seconds}</h1>
+                    : <h1>{hours < 10 ? `0${hours}` : hours} : {minutes < 10 ? `0${minutes}` : minutes} : {seconds < 10 ? `0${seconds}` : seconds}
+                    </h1>
                 }
-                <button onClick={this.resetTimer}>Click ME!</button>
+                <button className="button2" onClick={this.resetTimer}>./Warp</button>
+                <a href="https://github.com/init-JaeminKim/Quarantine-Timer"><button>source code</button></a>
+
             </div>
-        )
+        ]
     }
 }
 

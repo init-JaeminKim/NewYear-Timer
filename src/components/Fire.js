@@ -17,7 +17,7 @@ function fx() {
   return (
     <div>
       <Fireworks {...fxProps} />
-      <h1>Congrats!</h1>
+      <h1>Happy New Year!</h1>
     </div>
   )
 }

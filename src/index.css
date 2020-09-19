@@ -1,18 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Big Shoulders Text', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(238,174,202);
-  background: -moz-radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,203,233,1) 100%);
-  background: -webkit-radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,203,233,1) 100%);
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,203,233,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endColorstr="#94cbe9",GradientType=1);
+  background: rgb(14,60,123);
+  background: -moz-linear-gradient(90deg, rgba(14,60,123,1) 0%, rgba(123,123,225,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(14,60,123,1) 0%, rgba(123,123,225,1) 100%);
+  background: linear-gradient(90deg, rgba(14,60,123,1) 0%, rgba(123,123,225,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0e3c7b",endColorstr="#7b7be1",GradientType=1);
+  font-size: 35px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font-family: 'Big Shoulders Text', cursive;
+  font-weight: bold;
+  margin: 2em auto;
+  display: block;
+  -webkit-appearance: none;
+  border: 3px solid rgba(255,255,255,0.45);
+  border-radius: 50px;
+  padding: 1em 3em;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-clip: padding-box;
+  position: relative;
+  color: rgb(252, 237, 210);
+  background-image: linear-gradient(90deg, rgba(238,174,202,1) 0%,  rgba(123,123,225,1) 100%)
+}
+
+button:focus{
+  outline: none !important;
+  outline-offset: none !important;
+}
+
+button:before {
+  content: "";
+  width: 100%;
+  height:100%;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border-radius: 50px;
+  z-index: -1;
+  filter: blur(14px);
+  background-image: linear-gradient(90deg, rgba(238,174,202,1) 0%, transparent);
+
+}
+button:after {
+  content: "";
+  width: 100%;
+  height:100%;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border-radius: 50px;
+  z-index: -1;
+  filter: blur(14px);
+  background-image: linear-gradient(90deg, transparent, rgba(123,123,225,1) 100%)
+
+}
+
+button:hover {
+  animation: shake 0.7s;
+
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
