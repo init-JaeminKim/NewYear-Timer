@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import '../css/Weather.css'
 import Spinner from 'react-spinkit'
 
-const API_KEY = "63cab6d946b12c02de546fe2d28b9370";
-
 
 export default class Weather extends Component {
 
@@ -35,8 +33,9 @@ export default class Weather extends Component {
 
         )
     }
+    
 
-    _getCoordinate = () => {
+   /* _getCoordinate = () => {
         if (navigator.geolocation) {
 
             navigator.geolocation.getCurrentPosition(position => {
@@ -58,5 +57,5 @@ export default class Weather extends Component {
         else{
             console.log("Fail..")
         }
-    }
-}
+    } */
+} 
