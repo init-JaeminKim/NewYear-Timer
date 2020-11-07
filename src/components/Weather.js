@@ -39,7 +39,7 @@ export default class Weather extends Component {
     _getWeather = () => {
 
         this._getCoordinate();
-        fetch(`http://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&units=imperial&appid=${API_KEY}`)
+        fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${this.state.lat}&lon=${this.state.long}&units=imperial&appid=${API_KEY}`)
             .then(res => res.json())
             .then((json) => {
                 this.setState({
