@@ -16,7 +16,7 @@ export default class Weather extends Component {
     }
 
     componentDidMount() {
-        this._getWeather();
+        this._getCoordinate();
     }
     render() {
         const { des, main, icon, lat, long } = this.state;
@@ -24,7 +24,7 @@ export default class Weather extends Component {
         return (
             <div className="Weather">
                 {lat === null || long == null
-                    ? <Spinner className="Loading" name="line-scale" color="rgb(252, 237, 210)"/>
+                    ? <Spinner className="Loading" name="line-scale" color="rgb(252, 237, 210)" />
                     : <div className="row">
                         <h3 className="block fade-in">{main}°F</h3>
                         <img className="block fade-in" src={`http://openweathermap.org/img/wn/${icon}@2x.png`}></img>
@@ -36,26 +36,27 @@ export default class Weather extends Component {
         )
     }
 
-    _getWeather = () => {
+    _getCoordinate = () => {
+        if (navigator.geolocation) {
 
-        this._getCoordinate();
-        fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${this.state.lat}&lon=${this.state.long}&units=imperial&appid=${API_KEY}`)
-            .then(res => res.json())
-            .then((json) => {
+            navigator.geolocation.getCurrentPosition(position => {
                 this.setState({
-                    main: json.main.temp,
-                    icon: json.weather[0].icon,
-                    des: json.weather[0].description
+                    lat: position.coords.latitude,
+                    long: position.coords.longitude,
+                });
+                fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${this.state.lat}&lon=${this.state.long}&units=imperial&appid=${API_KEY}`)
+                .then(res => res.json())
+                .then((json) => {
+                    this.setState({
+                        main: json.main.temp,
+                        icon: json.weather[0].icon,
+                        des: json.weather[0].description
+                    })
                 })
             })
-    }
-
-    _getCoordinate = () => {
-        navigator.geolocation.getCurrentPosition(position => {
-            this.setState({
-                lat: position.coords.latitude,
-                long: position.coords.longitude,
-            });
-        })
+        }
+        else{
+            console.log("Fail..")
+        }
     }
 }
