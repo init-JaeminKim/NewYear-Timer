@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import '../css/Weather.css'
+import Spinner from 'react-spinkit'
 
 const API_KEY = "63cab6d946b12c02de546fe2d28b9370";
 
@@ -23,7 +24,7 @@ export default class Weather extends Component {
         return (
             <div className="Weather">
                 {lat === null || long == null
-                    ? <h2>Loading...</h2>
+                    ? <Spinner className="Loading" name="line-scale" color="rgb(252, 237, 210)"/>
                     : <div>
                         <h3 className="block">{main}°F</h3>
                         <img className="block" src={`http://openweathermap.org/img/wn/${icon}@2x.png`}></img>
