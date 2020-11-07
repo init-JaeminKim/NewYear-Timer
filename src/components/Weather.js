@@ -35,7 +35,7 @@ export default class Weather extends Component {
     }
     
 
-   /* _getCoordinate = () => {
+    _getCoordinate = () => {
         if (navigator.geolocation) {
 
             navigator.geolocation.getCurrentPosition(position => {
@@ -57,5 +57,5 @@ export default class Weather extends Component {
         else{
             console.log("Fail..")
         }
-    } */
+    } 
 } 
