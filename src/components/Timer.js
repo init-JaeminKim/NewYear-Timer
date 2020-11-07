@@ -1,17 +1,14 @@
 import React, { Component } from 'react'
 import Fire from "../components/Fire"
 
-let newYear = 1609480800000-Date.now();
+let newYear = 1609480800000 - Date.now();
 
 class Timer extends Component {
 
-   
-    
-
     state = {
-        hours: parseInt(newYear/3600000),
-        minutes: parseInt((newYear/60000)%60),
-        seconds: parseInt((newYear/3600000)%24)
+        hours: parseInt(newYear / 3600000),
+        minutes: parseInt((newYear / 60000) % 60),
+        seconds: parseInt((newYear / 3600000) % 24)
     }
 
     componentDidMount() {
@@ -47,7 +44,6 @@ class Timer extends Component {
         }, 1000)
     }
 
-
     componentWillUnmount() {
         clearInterval(this.myInterval)
     }
@@ -66,7 +62,7 @@ class Timer extends Component {
         return [
             <h2>New Year</h2>,
             <div>
-                { hours === 0 && minutes === 0 && seconds === 0
+                {hours === 0 && minutes === 0 && seconds === 0
                     ? <Fire></Fire>
                     : <h1>{hours < 10 ? `0${hours}` : hours} : {minutes < 10 ? `0${minutes}` : minutes} : {seconds < 10 ? `0${seconds}` : seconds}
                     </h1>

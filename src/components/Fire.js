@@ -1,5 +1,5 @@
 import React from 'react'
-import { Fireworks } from 'fireworks/lib/react'
+import { Fireworks } from 'fireworks'
 
 
 function fx() {
