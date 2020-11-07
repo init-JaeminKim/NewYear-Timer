@@ -4,7 +4,6 @@
   margin: 0 auto;
   width: 100%;
   color: rgb(252, 237, 210);
-  margin-top: 20px; 
 }
 
 .block {
@@ -13,6 +12,63 @@
   vertical-align: middle;
 }
 
+.row{
+    padding-top: 30px;
+}
+
+.fade-in {
+  animation: fadeIn ease-out 3s;
+  -webkit-animation: fadeIn ease-out 3s;
+}
+
 .Loading {
-    margin: 0 auto;
+    display: inline-block;
+    width: 100px;
+    vertical-align: middle;
+    margin-top: 30px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

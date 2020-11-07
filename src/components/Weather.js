@@ -25,10 +25,10 @@ export default class Weather extends Component {
             <div className="Weather">
                 {lat === null || long == null
                     ? <Spinner className="Loading" name="line-scale" color="rgb(252, 237, 210)"/>
-                    : <div>
-                        <h3 className="block">{main}°F</h3>
-                        <img className="block" src={`http://openweathermap.org/img/wn/${icon}@2x.png`}></img>
-                        <h3 className="block">{des}</h3>
+                    : <div className="row">
+                        <h3 className="block fade-in">{main}°F</h3>
+                        <img className="block fade-in" src={`http://openweathermap.org/img/wn/${icon}@2x.png`}></img>
+                        <h3 className="block fade-in">{des}</h3>
                     </div>
                 }
             </div>
@@ -39,7 +39,7 @@ export default class Weather extends Component {
     _getWeather = () => {
 
         this._getCoordinate();
-        fetch(`http://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=63cab6d946b12c02de546fe2d28b9370`)
+        fetch(`http://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&units=imperial&appid=${API_KEY}`)
             .then(res => res.json())
             .then((json) => {
                 this.setState({
