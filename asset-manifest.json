@@ -1,25 +1,22 @@
 {
   "files": {
-    "main.css": "/NewYear-Timer/static/css/main.b7c9c9f5.chunk.css",
-    "main.js": "/NewYear-Timer/static/js/main.69b61c98.chunk.js",
-    "main.js.map": "/NewYear-Timer/static/js/main.69b61c98.chunk.js.map",
+    "main.css": "/NewYear-Timer/static/css/main.e9427dfa.chunk.css",
+    "main.js": "/NewYear-Timer/static/js/main.247f1781.chunk.js",
+    "main.js.map": "/NewYear-Timer/static/js/main.247f1781.chunk.js.map",
     "runtime-main.js": "/NewYear-Timer/static/js/runtime-main.5b40edb8.js",
     "runtime-main.js.map": "/NewYear-Timer/static/js/runtime-main.5b40edb8.js.map",
-    "static/css/2.8d0ed72a.chunk.css": "/NewYear-Timer/static/css/2.8d0ed72a.chunk.css",
-    "static/js/2.419929f0.chunk.js": "/NewYear-Timer/static/js/2.419929f0.chunk.js",
-    "static/js/2.419929f0.chunk.js.map": "/NewYear-Timer/static/js/2.419929f0.chunk.js.map",
+    "static/js/2.4f9463c0.chunk.js": "/NewYear-Timer/static/js/2.4f9463c0.chunk.js",
+    "static/js/2.4f9463c0.chunk.js.map": "/NewYear-Timer/static/js/2.4f9463c0.chunk.js.map",
     "index.html": "/NewYear-Timer/index.html",
-    "precache-manifest.a0b3c563fb893b09536c602309bc750a.js": "/NewYear-Timer/precache-manifest.a0b3c563fb893b09536c602309bc750a.js",
+    "precache-manifest.dde6d63f15bf9883b9204729974f6bfa.js": "/NewYear-Timer/precache-manifest.dde6d63f15bf9883b9204729974f6bfa.js",
     "service-worker.js": "/NewYear-Timer/service-worker.js",
-    "static/css/2.8d0ed72a.chunk.css.map": "/NewYear-Timer/static/css/2.8d0ed72a.chunk.css.map",
-    "static/css/main.b7c9c9f5.chunk.css.map": "/NewYear-Timer/static/css/main.b7c9c9f5.chunk.css.map",
-    "static/js/2.419929f0.chunk.js.LICENSE.txt": "/NewYear-Timer/static/js/2.419929f0.chunk.js.LICENSE.txt"
+    "static/css/main.e9427dfa.chunk.css.map": "/NewYear-Timer/static/css/main.e9427dfa.chunk.css.map",
+    "static/js/2.4f9463c0.chunk.js.LICENSE.txt": "/NewYear-Timer/static/js/2.4f9463c0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.5b40edb8.js",
-    "static/css/2.8d0ed72a.chunk.css",
-    "static/js/2.419929f0.chunk.js",
-    "static/css/main.b7c9c9f5.chunk.css",
-    "static/js/main.69b61c98.chunk.js"
+    "static/js/2.4f9463c0.chunk.js",
+    "static/css/main.e9427dfa.chunk.css",
+    "static/js/main.247f1781.chunk.js"
   ]
 }
