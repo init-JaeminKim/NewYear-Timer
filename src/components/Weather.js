@@ -65,7 +65,7 @@ export default class Weather extends Component {
             })
         }
         else {
-            console.log("Fail..")
+            console.log("Fail to fetch..")
         }
     }
 }
