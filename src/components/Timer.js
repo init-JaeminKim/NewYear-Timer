@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Fire from "../components/Fire"
 
-let newYear = 1609524000000 - Date.now();
+let newYear = 1641103200000 - Date.now(); // 1609524000000 => 2021
 
 class Timer extends Component {
 
